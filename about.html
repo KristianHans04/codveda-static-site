@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Codveda Technologies, our mission to democratize tech education, our team of experienced engineers, and the values that drive our programs.">
+  <title>About Us | Codveda Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="sr-only" style="position:absolute;top:0;left:0;padding:1rem;background:var(--color-primary);color:#fff;z-index:9999;" onfocus="this.style.clip='auto';this.style.width='auto';this.style.height='auto'" onblur="this.className='sr-only'">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Codveda Technologies home">Cod<span>veda</span></a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator" aria-hidden="true">/</span>
+          <span class="current" aria-current="page">About</span>
+        </nav>
+        <h1>About Codveda</h1>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <h2 id="mission-heading">Our Mission</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Codveda Technologies was founded on a simple premise: quality technology education should be accessible, practical, and aligned with what the industry actually needs.</p>
+            <p>We bridge the gap between academic theory and professional practice by building learning experiences around real projects, production-grade tools, and mentorship from working engineers. Our students do not just learn syntax. They learn how to think like engineers, ship working software, and communicate technical decisions clearly.</p>
+            <p>Every program we design is structured to produce measurable outcomes: deployed applications, clean code, and the confidence to walk into any engineering team and contribute from day one.</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&q=80"
+            alt="Team of developers collaborating around a table with laptops and whiteboards"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section section-alt" aria-labelledby="team-heading">
+      <div class="container">
+        <h2 id="team-heading" class="text-center">Our Team</h2>
+        <p class="text-center text-muted" style="max-width:600px;margin:0.75rem auto 0;">Experienced engineers and educators committed to building the next generation of tech professionals.</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=160&fit=crop&q=80"
+              alt="Portrait of a male technology instructor"
+              loading="lazy"
+            >
+            <h3>Arjun Mehta</h3>
+            <p>Lead Instructor, Full-Stack Development</p>
+          </div>
+
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=160&h=160&fit=crop&q=80"
+              alt="Portrait of a female curriculum director"
+              loading="lazy"
+            >
+            <h3>Priya Sharma</h3>
+            <p>Curriculum Director</p>
+          </div>
+
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=160&h=160&fit=crop&q=80"
+              alt="Portrait of a male DevOps engineer"
+              loading="lazy"
+            >
+            <h3>David Okafor</h3>
+            <p>Senior Engineer, Cloud Infrastructure</p>
+          </div>
+
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=160&h=160&fit=crop&q=80"
+              alt="Portrait of a female UX design mentor"
+              loading="lazy"
+            >
+            <h3>Lina Torres</h3>
+            <p>UX Design Mentor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" aria-labelledby="values-heading">
+      <div class="container">
+        <h2 id="values-heading" class="text-center">Our Values</h2>
+        <p class="text-center text-muted" style="max-width:600px;margin:0.75rem auto 0;">The principles that guide how we teach, build, and grow.</p>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Practical First</h3>
+              <p>We prioritize hands-on experience over passive consumption. Every concept is taught through building real, deployable applications.</p>
+            </div>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Community Driven</h3>
+              <p>Learning is stronger in community. We foster collaboration, peer feedback, and knowledge sharing across every cohort.</p>
+            </div>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Quality Standards</h3>
+              <p>We hold our content and our graduates to professional standards. Clean code, tested software, and thoughtful architecture are non-negotiable.</p>
+            </div>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Globally Accessible</h3>
+              <p>Technology education should not be limited by geography or background. We design programs that reach learners wherever they are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Cod<span>veda</span></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Codveda Technologies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
