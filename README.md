@@ -38,6 +38,15 @@ Level-1-Static-Site/
   .gitignore
 ```
 
+## Live Deployment
+
+| Environment | URL |
+|---|---|
+| Cloudflare Pages | https://codveda-static.pages.dev |
+| Custom Domain | https://codveda-static.kristianhans.com |
+
+Deployed via **GitHub auto-deploy**: every push to `main` triggers a new Cloudflare Pages build automatically.
+
 ## Setup
 
 1. Clone the repository:
@@ -47,3 +56,16 @@ Level-1-Static-Site/
 2. Open `index.html` in any modern browser.
 
 No build tools or dependencies required.
+
+## Deployment
+
+This project is deployed to **Cloudflare Pages** with GitHub integration.
+
+To re-deploy manually:
+```bash
+# No build step required — Cloudflare Pages serves static files directly
+# Just push to main and GitHub auto-deploy takes care of the rest
+git push origin main
+```
+
+Cloudflare Pages project name: `codveda-static`
