@@ -3,213 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Codveda Technologies delivers expert IT education, web development training, and digital solutions to build the next generation of tech professionals.">
+  <meta name="description" content="Codveda Technologies delivers industry-driven IT education, hands-on web development training, and real-world project experience. AICTE recognized, ISO certified.">
   <title>Codveda Technologies | Education and IT Services</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Ctext x='6' y='24' font-family='Inter,system-ui,sans-serif' font-size='22' font-weight='800' fill='%233b82f6'%3EC%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <!-- Skip to main content -->
-  <a href="#main-content" class="sr-only" style="position:absolute;top:0;left:0;padding:1rem;background:var(--color-primary);color:#fff;z-index:9999;clip:auto;width:auto;height:auto;" onfocus="this.style.clip='auto';this.style.width='auto';this.style.height='auto'" onblur="this.className='sr-only'">Skip to main content</a>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
-  <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Codveda Technologies home">
-        Cod<span>veda</span>
-      </a>
-
+      <a href="index.html" class="nav-logo" aria-label="Codveda Technologies home">Cod<span>veda</span></a>
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="internships.html">Internships</a>
         <a href="contact.html">Contact</a>
       </nav>
-
       <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
-
-    <!-- Mobile Menu -->
     <div class="mobile-overlay" id="mobile-overlay"></div>
     <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="courses.html">Courses</a>
+      <a href="internships.html">Internships</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main id="main-content">
-
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <h1>Build Your Future in <span>Technology</span></h1>
-        <p>Industry-driven IT education, hands-on web development training, and real-world project experience to launch your career in tech.</p>
+      <div class="container hero-content">
+        <div class="hero-badge">AICTE Recognized &middot; ISO 9001:2015 Certified</div>
+        <h1>Build Your Future in<br><span class="highlight">Technology</span></h1>
+        <p>Industry-driven IT education, hands-on development training, and real-world project experience. Over 1,800 interns launched into tech careers through structured, practical programs.</p>
         <div class="hero-actions">
-          <a href="about.html" class="btn btn-primary">Explore Programs</a>
-          <a href="contact.html" class="btn btn-outline" style="border-color:var(--color-white);color:var(--color-white);">Get in Touch</a>
+          <a href="courses.html" class="btn btn-primary">Explore Programs</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats-section" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="1800" data-suffix="+">0</div>
+            <div class="stat-label">Happy Interns</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-number" data-count="200" data-suffix="+">0</div>
+            <div class="stat-label">Stipend Scholars</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number" data-count="20" data-suffix="+">0</div>
+            <div class="stat-label">Active Clients</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label">Programs Offered</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="var(--color-navy)">
+        <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
     <!-- Services Section -->
     <section class="section" aria-labelledby="services-heading">
       <div class="container">
-        <h2 id="services-heading" class="text-center">What We Offer</h2>
-        <p class="text-center text-muted" style="max-width:600px;margin:0.75rem auto 0;">Comprehensive programs designed to take you from beginner to industry-ready professional.</p>
+        <h2 id="services-heading" class="text-center reveal">What We Offer</h2>
+        <p class="section-subtitle text-center reveal reveal-delay-1">Comprehensive programs from beginner to industry-ready, backed by real-world project experience.</p>
 
         <div class="services-grid">
-          <div class="service-card">
+          <a href="services.html" class="service-card reveal reveal-delay-1" style="text-decoration:none;color:inherit;">
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/>
               </svg>
             </div>
             <h3>Web Development</h3>
-            <p>Master HTML, CSS, JavaScript, React, and full-stack development through structured projects that mirror real industry workflows.</p>
-          </div>
+            <p>HTML, CSS, JavaScript, React, and full-stack development through structured projects mirroring industry workflows.</p>
+            <span class="card-link">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </a>
 
-          <div class="service-card">
+          <a href="services.html" class="service-card reveal reveal-delay-2" style="text-decoration:none;color:inherit;">
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"/>
               </svg>
             </div>
-            <h3>IT Education</h3>
-            <p>Structured learning paths covering fundamentals of computer science, data structures, algorithms, and software engineering best practices.</p>
-          </div>
+            <h3>AI and Machine Learning</h3>
+            <p>Data science, neural networks, and ML model deployment. From Python fundamentals to production-grade AI systems.</p>
+            <span class="card-link">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </a>
 
-          <div class="service-card">
+          <a href="services.html" class="service-card reveal reveal-delay-3" style="text-decoration:none;color:inherit;">
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
               </svg>
             </div>
-            <h3>Digital Solutions</h3>
-            <p>Custom software development, deployment strategies, and technology consulting to help businesses modernize their digital infrastructure.</p>
-          </div>
+            <h3>Mobile Development</h3>
+            <p>Build cross-platform apps with Flutter and native development skills. Ship to iOS and Android from a single codebase.</p>
+            <span class="card-link">Learn more <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="section section-alt" aria-labelledby="features-heading">
+    <!-- Courses Preview -->
+    <section class="section section-alt" aria-labelledby="courses-heading">
       <div class="container">
-        <h2 id="features-heading" class="text-center">Why Choose Codveda</h2>
-        <p class="text-center text-muted" style="max-width:600px;margin:0.75rem auto 0;">Our approach combines rigorous technical training with practical project experience.</p>
+        <h2 id="courses-heading" class="text-center reveal">Featured Courses</h2>
+        <p class="section-subtitle text-center reveal reveal-delay-1">Structured learning paths designed to produce job-ready engineers.</p>
 
-        <div class="features-list">
-          <div class="feature-item">
-            <div class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Project-Based Learning</h4>
-              <p>Every module concludes with a real-world project. No theoretical exercises with no practical application.</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Industry-Aligned Curriculum</h4>
-              <p>Content is updated regularly to match what companies actually hire for, not outdated textbook theory.</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Mentorship and Support</h4>
-              <p>Access to experienced engineers who guide your learning and provide feedback on your code and projects.</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Portfolio-Ready Output</h4>
-              <p>Graduate with a portfolio of deployed projects that demonstrate your skills to potential employers.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section" aria-labelledby="testimonials-heading">
-      <div class="container">
-        <h2 id="testimonials-heading" class="text-center">What Our Students Say</h2>
-        <p class="text-center text-muted" style="max-width:600px;margin:0.75rem auto 0;">Hear from graduates who have launched their careers through our programs.</p>
-
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <blockquote>The project-based curriculum transformed my understanding of web development. I went from writing basic HTML to deploying full-stack applications in twelve weeks.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">AK</div>
-              <div class="testimonial-info">
-                <div class="name">Amara K.</div>
-                <div class="role">Frontend Developer</div>
+        <div class="courses-strip">
+          <a href="courses.html" class="course-card reveal reveal-delay-1" style="text-decoration:none;color:inherit;">
+            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=200&fit=crop&q=80" alt="Code on screen representing web development" class="course-card-img" loading="lazy">
+            <div class="course-card-body">
+              <h3>Complete Web Development</h3>
+              <p>HTML, CSS, JavaScript, React, Node.js, databases, and deployment — from zero to full-stack.</p>
+              <div class="course-meta">
+                <span>1 Month</span>
+                <span>Beginner to Advanced</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="testimonial-card">
-            <blockquote>The mentorship quality is outstanding. Having experienced engineers review my code and explain better approaches accelerated my growth significantly.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">JM</div>
-              <div class="testimonial-info">
-                <div class="name">James M.</div>
-                <div class="role">Software Engineer</div>
+          <a href="courses.html" class="course-card reveal reveal-delay-2" style="text-decoration:none;color:inherit;">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&q=80" alt="Data visualization dashboard" class="course-card-img" loading="lazy">
+            <div class="course-card-body">
+              <h3>Data Science Masterclass</h3>
+              <p>Python, Pandas, NumPy, Scikit-learn, TensorFlow. Analyze data and build predictive models.</p>
+              <div class="course-meta">
+                <span>1 Month</span>
+                <span>Intermediate</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="testimonial-card">
-            <blockquote>Codveda gave me the structure and accountability I could not find in self-paced online courses. The curriculum is rigorous, practical, and current.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">FW</div>
-              <div class="testimonial-info">
-                <div class="name">Fatima W.</div>
-                <div class="role">Full-Stack Developer</div>
+          <a href="courses.html" class="course-card reveal reveal-delay-3" style="text-decoration:none;color:inherit;">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=200&fit=crop&q=80" alt="Mobile phone showing app interface" class="course-card-img" loading="lazy">
+            <div class="course-card-body">
+              <h3>Flutter App Development</h3>
+              <p>Build beautiful cross-platform mobile apps with Dart and Flutter. Ship to both stores.</p>
+              <div class="course-meta">
+                <span>1 Month</span>
+                <span>Intermediate</span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="section section-dark text-center">
+    <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container">
-        <h2>Ready to Start Your Journey?</h2>
-        <p style="max-width:500px;margin:1rem auto 2rem;color:rgba(255,255,255,0.75);">Join hundreds of students who have transformed their careers through structured, practical tech education.</p>
-        <a href="contact.html" class="btn btn-primary" style="background-color:var(--color-accent-gold);color:var(--color-navy);">Contact Us Today</a>
+        <h2 id="cta-heading" class="reveal">Ready to Start Your Journey?</h2>
+        <p class="reveal reveal-delay-1">Join 1,800+ interns who transformed their careers through structured, practical tech education at Codveda.</p>
+        <a href="internships.html" class="btn btn-gold reveal reveal-delay-2">Apply for an Internship</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
@@ -217,26 +191,33 @@
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="courses.html">Courses</a>
+          <a href="internships.html">Internships</a>
           <a href="contact.html">Contact</a>
         </nav>
         <div class="footer-social">
-          <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/codveda-technologies/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-          <a href="https://twitter.com" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/codveda/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/codveda" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://t.me/codveda" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
           </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>2026 Codveda Technologies. All rights reserved.</p>
+        <p>2025 Codveda Technologies. All rights reserved. | Chandrapur, Maharashtra</p>
       </div>
     </div>
   </footer>
 
   <script src="scripts/navigation.js"></script>
+  <script src="scripts/animations.js"></script>
 </body>
 </html>
